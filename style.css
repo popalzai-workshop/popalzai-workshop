@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+
+/* Header */
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:4px solid white;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+
+/* Navigation */
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+
+/* Sections */
+section{
+    background:white;
+    width:90%;
+    max-width:800px;
+    margin:25px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+
+/* Services List */
+ul{
+    list-style:none;
+}
+
+ul li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* Gallery */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.gallery img{
+    width:220px;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+
+/* Call Button */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#218838;
+}
+
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+
+/* Mobile Design */
+@media(max-width:600px){
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
+
+}
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.card{
+    background:#f8f9fa;
+    width:220px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#e7f1ff;
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+.whatsapp{
+    display:inline-block;
+    margin-top:15px;
+    margin-left:10px;
+    padding:12px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+}
+/* Mobile Responsive Design */
+
+@media(max-width:600px){
+
+    header{
+        padding:20px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    header p{
+        font-size:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:12px 0;
+    }
+
+    section{
+        width:95%;
+        margin:15px auto;
+        padding:15px;
+    }
+
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
+
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .btn,
+    .whatsapp{
+        width:100%;
+        text-align:center;
+        margin-left:0;
+    }
+
+}
